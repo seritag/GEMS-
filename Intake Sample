@@ -1,0 +1,39 @@
+---
+name: New Project
+description: Request a large chunk of work comprised of multiple deliverables
+labels: ["Type: Project"]
+body:
+  - type: input
+    id: vault_link
+    attributes:
+      label: Vault link
+      placeholder: e.g. https://vault.shopify.io/gsd/projects/12345
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Several lines or short paragraphs that summarize the problem being solved or the opportunity being captured.  This should be enough for general Shopifolk without prior knowledge to understand what is being done and why.  (This could be copied from the Vault GSD project)
+  - type: dropdown
+    id: product_area
+    attributes:
+      label: Teams
+      options:
+        - Plus
+        - Money
+        - Retail
+        - Markets
+        - Audiences
+        - Paid D&V
+        - Paid Social 
+        - Affiliates 
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Define the initial list of anticipated deliverables.  These will evolve as work progresses, so only capture what you know now (or just leave it as-is).
+      value: |
+        ```[tasklist]
+        ### Deliverables 
+        - [ ] ...
+        ```
+---
